@@ -1,34 +1,76 @@
+import { useNavigate } from "react-router-dom";
+
 const footerSections = [
     {
         title: "About",
         items: [
-            "About RoyalMega",
-            "How it works",
-            "Yesterday Results",
-            "Winners & Payouts",
+            {
+                label: "About RoyalMega",
+                link: "/about",
+            },
+            {
+                label: "How it works",
+                link: "/how-it-works",
+            },
+            {
+                label: "Yesterday Results",
+                link: "/yesterday-results",
+            },
+            {
+                label: "Winners & Payouts",
+                link: "/winner",
+            },
         ],
     },
     {
         title: "Support",
         items: [
-            "Help Center / FAQs",
-            "Contact us",
-            "Ticket purchase guide (step-by-step)",
-            "Deposit & withdrawal methods",
+            {
+                label: "Help Center / FAQs",
+                link: "/help-center",
+            },
+            {
+                label: "Contact us",
+                link: "/contact",
+            },
+            {
+                label: "Ticket purchase guide (step-by-step)",
+                link: "/ticket-guide",
+            },
+            {
+                label: "Deposit & withdrawal methods",
+                link: "/payments",
+            },
         ],
     },
     {
         title: "Legal",
         items: [
-            "Terms & Conditions",
-            "Privacy Policy",
-            "Cookie Policy",
-            "KYC & Verification policy",
-            "Anti-fraud / AML policy",
+            {
+                label: "Terms & Conditions",
+                link: "/terms",
+            },
+            {
+                label: "Privacy Policy",
+                link: "/privacy-policy",
+            },
+            {
+                label: "Cookie Policy",
+                link: "/cookie-policy",
+            },
+            {
+                label: "KYC & Verification policy",
+                link: "/kyc-policy",
+            },
+            {
+                label: "Anti-fraud / AML policy",
+                link: "/aml-policy",
+            },
         ],
     },
 ];
 export default function Footer() {
+    const navigate = useNavigate();
     return (
         <div className="pb-[20px]">
         <div className="relative mx-auto w-[1398px] mt-[50px] mb-[20px] rounded-[10px] border-1 border-[#FFFFFF33]  bg-gradient-to-b from-[#8C0B31] to-[#310117] p-[10px]">
@@ -51,13 +93,14 @@ export default function Footer() {
                             </p>
 
                             {section.items.map((item, itemIndex) => (
-                                <p
-                                    key={itemIndex}
-                                    className="text-[#FFFFFF] text-[16px] font-[400]"
-                                >
-                                    {item}
-                                </p>
-                            ))}
+                                    <p
+                                        key={itemIndex}
+                                        onClick={() => navigate(item.link)}
+                                        className="text-left text-[#FFFFFF] text-[16px] font-[400] "
+                                    >
+                                        {item.label}
+                                    </p>
+                                ))}
                         </div>
                     </div>
                 ))}

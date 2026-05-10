@@ -3,23 +3,28 @@ import Button from "./ui/Button";
 const Menu = [
     {
         name: "Instant Lottery",
-        url: "Instant-lottery.svg"
+        url: "Instant-lottery.svg",
+        link: "/instant-lottery"
     },
     {
         name: "Lottery",
-        url: "lottery.svg"
+        url: "lottery.svg",
+        link: "/lottery"
     },
     {
         name: "Matka",
-        url: "matka.svg"
+        url: "matka.svg",
+        link: "/matka"
     },
     {
         name: "Lotto",
-        url: "lotto.svg"
+        url: "lotto.svg",
+        link: "/lotto"
     },
     {
         name: "Casino",
-        url: "casino.svg"
+        url: "casino.svg",
+        link: "/casino"
     }
 ]
 export default function Header() {
@@ -29,7 +34,7 @@ export default function Header() {
                 {/* left side menu */}
                 <div className="absolute top-[5px] left-[5px] flex z-30 ">
                     {Menu.map((item) => (
-                        <Button key={item.name} url={item.url} buttonText={item.name} />
+                        <Button key={item.name} url={item.url} buttonText={item.name} link={item.link} />
                     ))}
                 </div>
 

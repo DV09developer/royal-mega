@@ -14,6 +14,7 @@
 #root {
   background-color: #140C0B;
   height: full;
+  min-height: 100vh;
 }
 
 .triangle-down {
