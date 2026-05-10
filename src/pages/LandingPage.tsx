@@ -51,10 +51,10 @@ export default function LandingPage() {
                 </div>
             </div>
 
-            <p className="font-[400] text-[#FFFFFF] text-[14px] mt-[50px]">
+            <p className="font-[400] text-[#F8F4F480] text-[14px] mt-[50px]">
                 In order to register for this website, the user is required to accept the Terms of Service. In the event the terms of service are updated, existing users may choose to discontinue using the products and services before the said update shall become effective, which is a minimum of two weeks after it has been announced. In addition to the English language, copies may also be available in other languages. However, the original English version shall supersede any translations. You must first accept to be legally bound by the contents of the Responsible Gaming Agreement (RGA), including its Gaming Terms of Service (GT&C). It is important to know that the RGA/GT&C contains important limitations and restrictions that are imposed for your protection and those of others. Before you decide to participate in any game, please make sure to carefully review the RGA/GT&C.
             </p>
-            <p className="font-[400] text-[#FFFFFF] text-[14px] mt-[24px]">
+            <p className="font-[400] text-[#F8F4F480] text-[14px] mt-[24px]">
                 Autonomous Royalmega.com is owned and operated by Royalmega Online Limited with company registration number 15899 and registered address as Hamchako, Mutsamudu, Autonomous Islands of Anjouan, Union Of Comoros. Contact us email is royal@royalmega.com. Royalmega.com is licensed and regulated by the Government of the Autonomous Island of Anjouan, Union of Comoros and operates under License No. ALSI-202501009-FI1. Royalmega.com has passed all regulatory compliance and is legally authorized to conduct gaming operations for any and all games of chance and wagerin
             </p>
         </div>
