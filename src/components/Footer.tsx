@@ -73,7 +73,7 @@ export default function Footer() {
     const navigate = useNavigate();
     return (
         <div className="pb-[20px]">
-        <div className="relative mx-auto w-[1398px] mt-[50px] mb-[20px] rounded-[10px] border-1 border-[#FFFFFF33]  bg-gradient-to-b from-[#8C0B31] to-[#310117] p-[10px]">
+        <div className="relative mx-auto w-[1398px] mt-[50px] mb-[20px] rounded-[10px] border-1 border-[#FFFFFF33]  bg-gradient-to-b from-[#8C0B31] to-[#310117]">
             <div className="flex gap-[10px]">
 
                 <div className="pt-[24px] px-[50px] w-[337px]">
